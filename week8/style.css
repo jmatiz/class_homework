@@ -1,0 +1,10 @@
+#floated {
+
+	float:right;
+}
+
+a:hover {
+    color: pink;
+  	font-weight:bold;
+}
+
