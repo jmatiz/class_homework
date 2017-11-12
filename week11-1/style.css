@@ -1,0 +1,14 @@
+
+body {
+  background: radial-gradient(circle, pink, white);
+}
+
+p {
+
+	background-color:black;
+	color:white;
+	text-align:center;
+	position:relative;
+	top:250px;
+}
+
