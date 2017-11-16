@@ -1,0 +1,16 @@
+#nav_bar {
+
+	position:sticky;
+	top: 0;
+	background-color: white;
+}
+
+body {
+
+	background-image: url("https://i.ytimg.com/vi/XrWuFUSELrg/maxresdefault.jpg");
+	background-position: 700px 0px;
+	background-repeat:repeat;
+	background-attachment: fixed;
+	background-size:auto;
+}
+
