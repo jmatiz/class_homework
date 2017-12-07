@@ -1,6 +1,6 @@
 function hide() {
     
-    var x = document.getElementsByClassName('card');
+    var x = document.getElementsByClassName('reveal_content');
 
     for (i=0; i < x.length; i++) {
 
@@ -12,7 +12,7 @@ window.onload= hide;
 
 
 function showContent() {
-   var x = document.getElementsByClassName('card');
+   var x = document.getElementsByClassName('reveal_content');
 
    var i;
  
@@ -64,7 +64,7 @@ function hideLabel3() {
 function opacityChange1() {
    
 
-   document.getElementById('card_1').style.opacity = 1;
+   document.getElementById('button1').style.opacity = 1;
          
    
 }
@@ -72,7 +72,7 @@ function opacityChange1() {
 function opacityChange2() {
    
 
-   document.getElementById('card_1').style.opacity = .2;
+   document.getElementById('button1').style.opacity = .2;
          
    
 }
@@ -80,7 +80,7 @@ function opacityChange2() {
 function opacityChange1_2() {
    
 
-   document.getElementById('card_2').style.opacity = 1;
+   document.getElementById('button2').style.opacity = 1;
          
    
 }
@@ -88,7 +88,56 @@ function opacityChange1_2() {
 function opacityChange2_2() {
    
 
-   document.getElementById('card_2').style.opacity = .2;
+   document.getElementById('button2').style.opacity = .2;
          
    
+}
+
+function opacityChange1_3() {
+   
+
+   document.getElementById('button3').style.opacity = 1;
+         
+   
+}
+
+function opacityChange2_3() {
+   
+
+   document.getElementById('button3').style.opacity = .2;
+         
+   
+}
+
+function collapse_all() {  
+
+   $('.collapse_all').collapse('hide');
+}
+
+function pauseVideo() {
+
+       var video = document.getElementById("background");
+       var button = document.getElementById("play");
+
+       if (video.paused) {
+          video.play();
+          button.src= "images/pause.png";
+       } else {
+          video.pause();
+          button.src= "images/play.png";
+       }
+}
+
+function muteVideo() {
+
+       var video = document.getElementById("background");
+       var button = document.getElementById("mute");
+
+       if (video.muted) {
+          video.muted=false;
+          button.src= "images/mute.png";
+       } else {
+          video.muted=true;
+          button.src= "images/volume.png";
+       }
 }
